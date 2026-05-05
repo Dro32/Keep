@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "keep",
+  "version": "${version}",
+  "name": "Keep",
+  "description": "A note-taking mod similar to Google Keep inside Minecraft",
+  "authors": [
+    "Dro32"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Dro32/Keep",
+    "sources": "https://github.com/Dro32/Keep"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/keep/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.dro32.keep.Keep"
+    ],
+    "client": [
+      "com.dro32.keep.KeepClient"
+    ]
+  },
+  "mixins": [
+    "keep.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}",
+    "java": ">=21"
+  }
+}
